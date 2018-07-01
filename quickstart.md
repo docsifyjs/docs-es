@@ -8,7 +8,7 @@ Se recomienda instalar `docsify-cli` globalmente, lo que ayuda a inicializar y o
 npm i docsify-cli -g
 ```
 
-## Inicializar 
+## Inicializar
 
 Si desea escribir la documentación en el subdirectorio `./docs`, puede usar el comando `init`.
 
@@ -24,7 +24,7 @@ Después de que se complete `init`, puede ver la lista de archivos en el subdire
 * `README.md` como la página de inicio (la principal)
 * `.nojekyll` impide que las páginas de GitHub ignoren los archivos que comienzan con un guión bajo
 
-Puede actualizar fácilmente la documentación en `./docs/README.md`, por supuesto puede agregar [más páginas](more-pages.md).
+Puede actualizar fácilmente la documentación en `./docs/README.md`, por supuesto puede agregar [más páginas](/es/more-pages.md).
 
 ## Preview your site
 
@@ -93,4 +93,4 @@ You should set the `data-app` attribute if you changed `el`:
   </script>
 ```
 
-Compare [el configuration](configuration.md#el).
+Compare [el configuration](/es/configuration.md#el).

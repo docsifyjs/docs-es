@@ -22,7 +22,7 @@ If you need custom navigation, you can create a HTML-based navigation bar.
 
 ## Markdown
 
-Alternatively, you can create a custom markdown-based navigation file by setting `loadNavbar` to **true** and creating `_navbar.md`, compare [loadNavbar configuration](configuration.md#loadnavbar).
+Alternatively, you can create a custom markdown-based navigation file by setting `loadNavbar` to **true** and creating `_navbar.md`, compare [loadNavbar configuration](/es/configuration.md#loadnavbar).
 
 ```html
 <!-- index.html -->
@@ -55,26 +55,26 @@ You can create sub-lists by indenting items that are under a certain parent.
 
 * Getting started
 
-  * [Quick start](quickstart.md)
-  * [Writing more pages](more-pages.md)
-  * [Custom navbar](custom-navbar.md)
-  * [Cover page](cover.md)
+  * [Quick start](/es/quickstart.md)
+  * [Writing more pages](/es/more-pages.md)
+  * [Custom navbar](/es/custom-navbar.md)
+  * [Cover page](/es/cover.md)
 
 * Configuration
-  * [Configuration](configuration.md)
-  * [Themes](themes.md)
-  * [Using plugins](plugins.md)
-  * [Markdown configuration](markdown.md)
-  * [Language highlight](language-highlight.md)
+  * [Configuration](/es/configuration.md)
+  * [Themes](/es/themes.md)
+  * [Using plugins](/es/plugins.md)
+  * [Markdown configuration](/es/markdown.md)
+  * [Language highlight](/es/language-highlight.md)
 ```
 
 renders as
 
-![Nesting navbar](_images/nested-navbar.png 'Nesting navbar')
+![Nesting navbar](/es/_images/nested-navbar.png 'Nesting navbar')
 
 ## Combining custom navbars with the emoji plugin
 
-If you use the [emoji plugin](plugins#emoji):
+If you use the [emoji plugin](/es/plugins#emoji):
 
 ```html
 <!-- index.html -->

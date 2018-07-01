@@ -33,7 +33,7 @@ are rendered as:
 Some time we will put some other relative path to the link, you have to need to tell docsify you don't need to compile this link. For example
 
 ```md
-[link](/demo/)
+[link](/es//demo/)
 ```
 
 It will be compiled to `<a href="/#/demo/">link</a>` and will be loaded `/demo/README.md`. Maybe you want to jump to `/demo/index.html`.
@@ -41,13 +41,13 @@ It will be compiled to `<a href="/#/demo/">link</a>` and will be loaded `/demo/R
 Now you can do that
 
 ```md
-[link](/demo/ ':ignore')
+[link](/es//demo/ ':ignore')
 ```
 
 You will get `<a href="/demo/">link</a>`html. Do not worry, you can still set title for link.
 
 ```md
-[link](/demo/ ':ignore title')
+[link](/es//demo/ ':ignore title')
 
 <a href="/demo/" title="title">link</a>
 ```
@@ -55,14 +55,14 @@ You will get `<a href="/demo/">link</a>`html. Do not worry, you can still set ti
 ## Set target attribute for link
 
 ```md
-[link](/demo ':target=_blank')
-[link](/demo2 ':target=_self')
+[link](/es//demo ':target=_blank')
+[link](/es//demo2 ':target=_self')
 ```
 
 ## Disable link
 
 ```md
-[link](/demo ':disabled')
+[link](/es//demo ':disabled')
 ```
 
 ## Github Task Lists

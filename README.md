@@ -1,12 +1,12 @@
-## docsify
+# docsify
 
 > Un generador mágico de sitios de documentación.
 
 ## Qué es
 
-docsify genera su sitio web de documentación sobre la marcha. A diferencia de GitBook, no genera archivos estáticos html. En cambio, carga y analiza de forma inteligente sus archivos de Markdown y los muestra como sitio web. Todo lo que necesita hacer es crear un `index.html` para comenzar y [desplegarlo en GitHub Pages](deploy.md).
+docsify genera su sitio web de documentación sobre la marcha. A diferencia de GitBook, no genera archivos estáticos html. En cambio, carga y analiza de forma inteligente sus archivos de Markdown y los muestra como sitio web. Todo lo que necesita hacer es crear un `index.html` para comenzar y [desplegarlo en GitHub Pages](/es/deploy.md).
 
-Lee la guía [Inicio Rápido](quickstart.md) para más detalles.
+Lee la guía [Inicio Rápido](/es/quickstart.md) para más detalles.
 
 ## Características
 
@@ -21,7 +21,7 @@ Lee la guía [Inicio Rápido](quickstart.md) para más detalles.
 
 ## Ejemplos
 
-Mira nuestro [Showcase](awesome.md) de docsify en uso.
+Mira nuestro [Showcase](/es/awesome.md) de docsify en uso.
 
 ## Donaciones
 

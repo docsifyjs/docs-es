@@ -7,6 +7,7 @@ See https://docsify.now.sh
 Repo in https://github.com/QingWei-Li/docsify-ssr-demo
 
 ## Why SSR?
+
 - Better SEO
 - Feeling cool
 
@@ -86,8 +87,9 @@ You can provide a template for entire page's HTML. such as
 ```
 
 The template should contain these comments for rendered app content.
- - `<!--inject-app-->`
- - `<!--inject-config-->`
+
+- `<!--inject-app-->`
+- `<!--inject-config-->`
 
 ## Configuration
 

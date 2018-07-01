@@ -1,6 +1,6 @@
 # Cover
 
-Activa la característica de cover cambiando la configuración `coverpage` a **true**, comparar [configuración de coverpage](configuration.md#coverpage).
+Activa la característica de cover cambiando la configuración `coverpage` a **true**, comparar [configuración de coverpage](/es/configuration.md#coverpage).
 
 ## Uso básico
 
@@ -20,7 +20,7 @@ Poner `coverpage` a **true**, y crear un `_coverpage.md`:
 ```markdown
 <!-- _coverpage.md -->
 
-![logo](_media/icon.svg)
+![logo](/es/_media/icon.svg)
 
 # docsify <small>3.5</small>
 
@@ -31,7 +31,7 @@ Poner `coverpage` a **true**, y crear un `_coverpage.md`:
 * Multiple themes
 
 [GitHub](https://github.com/QingWei-Li/docsify/)
-[Get Started](#docsify)
+[Get Started](/es/#docsify)
 ```
 
 !> ¡Un sitio de documentación puede tener solo una página de portada!
@@ -46,11 +46,11 @@ El color de fondo (o color del background) es general aleatoriamente por defecto
 # docsify <small>3.5</small>
 
 [GitHub](https://github.com/QingWei-Li/docsify/)
-[Get Started](#quick-start)
+[Get Started](/es/#quick-start)
 
 <!-- background image -->
 
-![](_media/bg.png)
+![](/es/_media/bg.png)
 
 <!-- background color -->
 
@@ -59,7 +59,7 @@ El color de fondo (o color del background) es general aleatoriamente por defecto
 
 ## Coverpage como página de inicio
 
-Normalmente, la portada y la página de inicio aparecen al mismo tiempo. Por supuesto, también puede separar la portada por [opción onlyCover](configuration.md#onlycover).
+Normalmente, la portada y la página de inicio aparecen al mismo tiempo. Por supuesto, también puede separar la portada por [opción onlyCover](/es/configuration.md#onlycover).
 
 ## Portadas múltiples
 

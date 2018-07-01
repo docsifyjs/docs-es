@@ -14,7 +14,7 @@ There're three places to populate your docs for your Github repository:
 
 It is recommended that you save your files to the `./docs` subfolder of the `master` branch of your repository. Then select `master branch /docs folder` as your Github Pages source in your repositories' settings page.
 
-![github pages](_images/deploy-github-pages.png)
+![github pages](/es/_images/deploy-github-pages.png)
 
 !> You can also save files in the root directory and select `master branch`.
 You'll need to place a `.nojekyll` file in the deploy location (such as `/docs` or the gh-pages branch
@@ -48,6 +48,7 @@ pages:
 Using Terminal determine and navigate to the directory for your Firebase Project - this could be `~/Projects/Docs` etc. From there, run `firebase init`, choosing `Hosting` from the menu (use **space** to select, **arrow keys** to change options and **enter** to confirm). Follow the setup instructions.
 
 You should have your `firebase.json` file looking similar to this (I changed the deployment directory from `public` to `site`):
+
 ```json
 {
   "hosting": {

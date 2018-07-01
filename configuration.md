@@ -157,7 +157,7 @@ window.$docsify = {
 * Type: `Boolean|String|String[]|Object`
 * Default: `false`
 
-Activate the [cover feature](cover.md). If true, it will load from `_coverpage.md`.
+Activate the [cover feature](/es/cover.md). If true, it will load from `_coverpage.md`.
 
 ```js
 window.$docsify = {
@@ -212,7 +212,7 @@ window.$docsify = {
 
 * Type: `Function`
 
-See [Markdown configuration](markdown.md).
+See [Markdown configuration](/es/markdown.md).
 
 ```js
 window.$docsify = {
@@ -281,7 +281,7 @@ window.$docsify = {
 
 * type: `Boolean`
 
-Execute the script on the page. Only parse the first script tag([demo](themes)). If Vue is present, it is turned on by default.
+Execute the script on the page. Only parse the first script tag([demo](/es/themes)). If Vue is present, it is turned on by default.
 
 ```js
 window.$docsify = {
@@ -428,7 +428,6 @@ Example:
  - then try to fetch the default page `/overview` (depending on the default language). If this page exists, it'll be displayed
  - then display 404 page.
 
-
 ```js
 window.$docsify = {
   fallbackLanguages: [
@@ -438,12 +437,12 @@ window.$docsify = {
 };
 ```
 
-
 ## notFoundPage
 
 * type: `Boolean` | `String` | `Object`
 
 Load the `_404.md` file:
+
 ```js
 window.$docsify = {
   notFoundPage: true
@@ -451,6 +450,7 @@ window.$docsify = {
 ```
 
 Load the customised path of the 404 page:
+
 ```js
 window.$docsify = {
   notFoundPage: 'my404.md'
@@ -458,6 +458,7 @@ window.$docsify = {
 ```
 
 Load the right 404 page according to the localisation:
+
 ```js
 window.$docsify = {
   notFoundPage: {
@@ -466,4 +467,5 @@ window.$docsify = {
   }
 };
 ```
+
 > Note: The options with fallbackLanguages didn't work with the `notFoundPage` options.
