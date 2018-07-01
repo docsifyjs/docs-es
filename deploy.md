@@ -14,7 +14,7 @@ There're three places to populate your docs for your Github repository:
 
 It is recommended that you save your files to the `./docs` subfolder of the `master` branch of your repository. Then select `master branch /docs folder` as your Github Pages source in your repositories' settings page.
 
-![github pages](/es/_images/deploy-github-pages.png)
+![github pages](_images/deploy-github-pages.png)
 
 !> You can also save files in the root directory and select `master branch`.
 You'll need to place a `.nojekyll` file in the deploy location (such as `/docs` or the gh-pages branch
