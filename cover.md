@@ -30,7 +30,7 @@ Poner `coverpage` a **true**, y crear un `_coverpage.md`:
 * No statically built html files
 * Multiple themes
 
-[GitHub](https://github.com/QingWei-Li/docsify/)
+[GitHub](https://github.com/docsify/docsify/)
 [Get Started](/es/#docsify)
 ```
 
