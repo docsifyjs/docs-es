@@ -1,6 +1,6 @@
 - Translations
-  - [:cn: 中文](https://docsify.js.org/#/zh-cn/)
-  - [:de: Deutsch](https://docsify.js.org/#/de-de/)
-  - [:uk: English](https://docsify.js.org/#/)
+  - [:uk: English](/)
+  - [:cn: 中文](/zh-cn/)
+  - [:de: Deutsch](/de-de/)
   - [:es: Spanish](/es/)
-  - [:ru: Russian](https://docsify-ru.js.org)
+  - [:ru: Russian](/ru/)
