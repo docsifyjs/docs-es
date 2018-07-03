@@ -16,8 +16,8 @@ Puedes configurar el `window.$docsify`.
 
 ## el
 
-* Type: `String`
-* Default: `#app`
+- Type: `String`
+- Default: `#app`
 
 El elemento DOM que se montará en la inicialización. Puede ser una cadena de selector CSS o un elemento HTML real.
 
@@ -29,8 +29,8 @@ window.$docsify = {
 
 ## repo
 
-* Type: `String`
-* Default: `null`
+- Type: `String`
+- Default: `null`
 
 Configure la url del repositorio o una cadena de nombre de `username/repo` para agregar el widget de [esquina GitHub](http://tholman.com/github-corners/) en la esquina superior derecha del sitio.
 
@@ -44,8 +44,8 @@ window.$docsify = {
 
 ## maxLevel
 
-* Type: `Number`
-* Default: `6`
+- Type: `Number`
+- Default: `6`
 
 Maximum Table of content level.
 
@@ -57,8 +57,8 @@ window.$docsify = {
 
 ## loadNavbar
 
-* Type: `Boolean|String`
-* Default: `false`
+- Type: `Boolean|String`
+- Default: `false`
 
 Loads navbar from the Markdown file `_navbar.md` if **true**, or else from the path specified.
 
@@ -74,8 +74,8 @@ window.$docsify = {
 
 ## loadSidebar
 
-* Type: `Boolean|String`
-* Default: `false`
+- Type: `Boolean|String`
+- Default: `false`
 
 Loads sidebar from the Markdown file `_sidebar.md` if **true**, or else from the path specified.
 
@@ -91,8 +91,8 @@ window.$docsify = {
 
 ## subMaxLevel
 
-* Type: `Number`
-* Default: `0`
+- Type: `Number`
+- Default: `0`
 
 Add table of contents (TOC) in custom sidebar.
 
@@ -104,8 +104,8 @@ window.$docsify = {
 
 ## auto2top
 
-* Type: `Boolean`
-* Default: `false`
+- Type: `Boolean`
+- Default: `false`
 
 Scrolls to the top of the screen when the route is changed.
 
@@ -117,8 +117,8 @@ window.$docsify = {
 
 ## homepage
 
-* Type: `String`
-* Default: `README.md`
+- Type: `String`
+- Default: `README.md`
 
 `README.md` in your docs folder will be treated as homepage for your website, but sometimes you may need to serve another file as your homepage.
 
@@ -135,7 +135,7 @@ window.$docsify = {
 
 ## basePath
 
-* Type: `String`
+- Type: `String`
 
 Base path of the website. You can set it to another directory or another domain name.
 
@@ -154,8 +154,8 @@ window.$docsify = {
 
 ## coverpage
 
-* Type: `Boolean|String|String[]|Object`
-* Default: `false`
+- Type: `Boolean|String|String[]|Object`
+- Default: `false`
 
 Activate the [cover feature](/es/cover.md). If true, it will load from `_coverpage.md`.
 
@@ -177,11 +177,23 @@ window.$docsify = {
 };
 ```
 
+## logo
+
+- Type: `String`
+
+Logotipo del sitio web tal como aparece en la barra lateral, puede cambiar el tamaño por CSS.
+
+```js
+window.$docsify = {
+  logo: '/_media/icon.svg'
+};
+```
+
 ## name
 
-* Type: `String`
+- Type: `String`
 
-Website name as it appears in the sidebar.
+Nombre del sitio web tal como aparece en la barra lateral.
 
 ```js
 window.$docsify = {
@@ -191,10 +203,10 @@ window.$docsify = {
 
 ## nameLink
 
-* Type: `String`
-* Default: `window.location.pathname`
+- Type: `String`
+- Default: `window.location.pathname`
 
-The name of the link.
+El nombre del enlace.
 
 ```js
 window.$docsify = {
@@ -210,9 +222,9 @@ window.$docsify = {
 
 ## markdown
 
-* Type: `Function`
+- Type: `Function`
 
-See [Markdown configuration](/es/markdown.md).
+Ver la [configuración de Markdown](/es/markdown.md).
 
 ```js
 window.$docsify = {
@@ -236,9 +248,9 @@ window.$docsify = {
 
 ## themeColor
 
-* Type: `String`
+- Type: `String`
 
-Customize the theme color. Use [CSS3 variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) feature and polyfill in old browser.
+Personaliza el color del diseño. Use [variables CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) y polyfill en navegadores antiguos.
 
 ```js
 window.$docsify = {
@@ -248,9 +260,9 @@ window.$docsify = {
 
 ## alias
 
-* Type: `Object`
+- Type: `Object`
 
-Set the route alias. You can freely manage routing rules. Supports RegExp.
+Establezca el alias de la ruta. Puede gestionar libremente las reglas de enrutamiento. Admite RegExp.
 
 ```js
 window.$docsify = {
@@ -266,9 +278,9 @@ window.$docsify = {
 
 ## autoHeader
 
-* type: `Boolean`
+- type: `Boolean`
 
-If `loadSidebar` and `autoHeader` are both enabled, for each link in `_sidebar.md`, prepend a header to the page before converting it to html. Compare [#78](https://github.com/QingWei-Li/docsify/issues/78).
+Si `loadSidebar` y `autoHeader` están habilitados (ambos), por cada enlace en el `_sidebar.md`, anteponer un encabezado a la página antes de convertirlo a html. Comparar [#78](https://github.com/docsify/docsify/issues/78).
 
 ```js
 window.$docsify = {
@@ -279,9 +291,9 @@ window.$docsify = {
 
 ## executeScript
 
-* type: `Boolean`
+- type: `Boolean`
 
-Execute the script on the page. Only parse the first script tag([demo](/es/themes)). If Vue is present, it is turned on by default.
+Ejecute la secuencia de comandos en la página. Solo analizar la primera etiqueta de secuencia de comandos ([Ver demo](/es/themes)). Si  Vue está presente, se habilita por defecto.
 
 ```js
 window.$docsify = {
@@ -297,13 +309,13 @@ window.$docsify = {
 </script>
 ```
 
-Note that if you are running an external script, e.g. an embedded jsfiddle demo, make sure to include the [external-script](plugins.md?id=external-script) plugin.
+Tenga en cuenta que si está ejecutando un script externo, por ejemplo una demostración jsfiddle integrada, asegúrese de incluir el  plugin [script externo](/es/plugins.md?id=external-script).
 
 ## noEmoji
 
-* type: `Boolean`
+- type: `Boolean`
 
-Disabled emoji parse.
+Deshabilitaría el parseo de emojis.
 
 ```js
 window.$docsify = {
@@ -313,9 +325,9 @@ window.$docsify = {
 
 ## mergeNavbar
 
-* type: `Boolean`
+- type: `Boolean`
 
-Navbar will be merged with the sidebar on smaller screens.
+Navbar se combinará con la barra lateral en pantallas más pequeñas.
 
 ```js
 window.$docsify = {
@@ -325,7 +337,7 @@ window.$docsify = {
 
 ## formatUpdated
 
-* type: `String|Function`
+- type: `String|Function`
 
 We can display the file update date through **{docsify-updated<span>}</span>** variable. And format it by `formatUpdated`.
 See https://github.com/lukeed/tinydate#patterns
@@ -344,8 +356,8 @@ window.$docsify = {
 
 ## externalLinkTarget
 
-* type: `String`
-* default: `_blank`
+- type: `String`
+- default: `_blank`
 
 Target to open external links. Default `'_blank'` (new window/tab)
 
@@ -357,8 +369,8 @@ window.$docsify = {
 
 ## routerMode
 
-* type: `String`
-* default: `hash`
+- type: `String`
+- default: `hash`
 
 ```js
 window.$docsify = {
@@ -368,7 +380,7 @@ window.$docsify = {
 
 ## noCompileLinks
 
-* type: `Array`
+- type: `Array`
 
 Sometimes we do not want docsify to handle our links. See [#203](https://github.com/QingWei-Li/docsify/issues/203)
 
@@ -380,7 +392,7 @@ window.$docsify = {
 
 ## onlyCover
 
-* type: `Boolean`
+- type: `Boolean`
 
 Only coverpage is loaded when visiting the home page.
 
@@ -392,7 +404,7 @@ window.$docsify = {
 
 ## requestHeaders
 
-* type: `Object`
+- type: `Object`
 
 Set the request resource headers.
 
@@ -406,7 +418,7 @@ window.$docsify = {
 
 ## ext
 
-* type: `String`
+- type: `String`
 
 Request file extension.
 
@@ -418,7 +430,7 @@ window.$docsify = {
 
 ## fallbackLanguages
 
-* type: `Array<string>`
+- type: `Array<string>`
 
 List of languages that will fallback to the default language when a page is request and didn't exists for the given local.
 
@@ -430,16 +442,13 @@ Example:
 
 ```js
 window.$docsify = {
-  fallbackLanguages: [
-    "fr",
-    "de"
-  ]
+  fallbackLanguages: ['fr', 'de']
 };
 ```
 
 ## notFoundPage
 
-* type: `Boolean` | `String` | `Object`
+- type: `Boolean` | `String` | `Object`
 
 Load the `_404.md` file:
 
