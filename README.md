@@ -26,3 +26,7 @@ Mira nuestro [Showcase](/es/awesome.md) de docsify en uso.
 ## Donaciones
 
 Considere donar si cree que docsify le resulta útil o si mi trabajo es valioso. Estaré feliz si puedes ayudar [compra una taza de café](https://github.com/QingWei-Li/donate). :heart:
+
+## Comunidad
+
+Los usuarios y el equipo de desarrollo están en [Gitter](https://gitter.im/docsifyjs/Lobby).
