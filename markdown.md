@@ -1,6 +1,6 @@
 # Configuración de Markdown
 
-**docsify** usa [marked](https://github.com/chjj/marked) como _parser_ de Markdown. Puede personalizar cómo renderiza su contenido de Markdown en HTML personalizando el `renderer`:
+**docsify** usa [marked](https://github.com/markedjs/marked) como _parser_ de Markdown. Puede personalizar cómo renderiza su contenido de Markdown en HTML personalizando el `renderer`:
 
 ```js
 window.$docsify = {
@@ -15,7 +15,7 @@ window.$docsify = {
 }
 ```
 
-?> Opciones de configuración Referencia [documentación de marked](https://github.com/chjj/marked#options-1)
+?> Opciones de configuración Referencia [documentación de marked](https://github.com/markedjs/marked#options-1)
 
 Incluso usted puede personalizar completamente las reglas de _parsing_.
 
