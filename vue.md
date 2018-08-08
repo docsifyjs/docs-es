@@ -1,18 +1,18 @@
 # Compatible con Vue
 
-!> Este archivo aún no está traducido al español, estamos traduciendo... si gustas, puedes ayudar.
+!> Este archivo aún no está traducido al español, estamos traduciendo... ¡Danos una mano con la traducción!
 
-You can write Vue components directly in the Markdown file, and it will be parsed. You can use this feature to write vue demo and documentation together.
+Puede escribir componentes Vue directamente en el archivo Markdown, y será _analizado_. Puede usar esta función para escribir una demostración y documentación vue juntos.
 
-## Basic usage
+## Uso básico
 
-Load the Vue in `./index.html`.
+Carga VUE en `./index.html`.
 
 ```html
 <script src="//unpkg.com/vue"></script>
 <script src="//unpkg.com/docsify"></script>
 
-<!-- or use the compressed files -->
+<!-- Or use the compressed files -->
 <script src="//unpkg.com/vue/dist/vue.min.js"></script>
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 ```
@@ -63,10 +63,10 @@ You can manually initialize a Vue instance.
 *index.html*
 
 ```html
-<!-- inject css file -->
+<!-- Inject css file -->
 <link rel="stylesheet" href="//unpkg.com/vuep/dist/vuep.css">
 
-<!-- inject javascript file -->
+<!-- Inject javascript file -->
 <script src="//unpkg.com/vue"></script>
 <script src="//unpkg.com/vuep"></script>
 <script src="//unpkg.com/docsify"></script>
@@ -98,4 +98,4 @@ You can manually initialize a Vue instance.
 </script>
 ```
 
-?> Example Refer to the [vuep documentation](https://qingwei-li.github.io/vuep/).
+?> Example Refer to the [Vuep documentation](https://qingwei-li.github.io/vuep/).
