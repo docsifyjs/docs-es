@@ -1,10 +1,8 @@
 # Más páginas
 
-!> Este archivo aún no está traducido al español, estamos traduciendo... si gustas, puedes ayudar.
+Si necesita más páginas, simplemente puede crear más archivos markdown en su directorio docsify. ISi crea un archivo llamado `guide.md`, entonces es accesible a través de `/#/guide`.
 
-If you need more pages, you can simply create more markdown files in your docsify directory. If you create a file named `guide.md`, then it is accessible via `/#/guide`.
-
-For example, the directory structure is as follows:
+Por ejemplo, la estructura del directorio es la siguiente:
 
 ```text
 .
@@ -16,7 +14,7 @@ For example, the directory structure is as follows:
         └── guide.md
 ```
 
-Matching routes
+Rutas coincidentes
 
 ```text
 docs/README.md        => http://domain.com
@@ -27,9 +25,9 @@ docs/zh-cn/guide.md   => http://domain.com/zh-cn/guide
 
 ## Sidebar
 
-In order to have sidebar, then you can create your own `_sidebar.md` (see [this documentation's sidebar](https://github.com/QingWei-Li/docsify/blob/master/docs/_sidebar.md) for an example):
+Para tener sidebar, puedes crear tu propio `_sidebar.md` (vea [el sidebar de esta documentación](https://github.com/QingWei-Li/docsify/blob/master/docs/_sidebar.md) para un ejemplo):
 
-First, you need to set `loadSidebar` to **true**. Details are available in the [configuration paragraph](/es/configuration.md#loadsidebar).
+En primer lugar, necesita establecer `loadSidebar` en **true**. Los detalles están disponibles en la [configuración del loadSidebar](/es/configuration.md#loadsidebar).
 
 ```html
 <!-- index.html -->
@@ -42,7 +40,7 @@ First, you need to set `loadSidebar` to **true**. Details are available in the [
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 ```
 
-Create the `_sidebar.md`:
+Crear el `_sidebar.md`:
 
 ```markdown
 <!-- docs/_sidebar.md -->
@@ -51,11 +49,11 @@ Create the `_sidebar.md`:
 * [Guide](/es/guide.md)
 ```
 
-You need to create a `.nojekyll` in `./docs` to prevent GitHub Pages from ignoring files that begin with an underscore.
+Necesita crear un `.nojekyll` en `./docs` para evitar que GitHub Pages ignoren los archivos que comienzan con un guión bajo.
 
-`_sidebar.md` is loaded from each level directory. If the current directory doesn't have `_sidebar.md`, it will fall back to the parent directory. If, for example, the current path is `/guide/quick-start`, the `_sidebar.md` will be loaded from `/guide/_sidebar.md`.
+`_sidebar.md` es cargado desde cada directorio de nivel. Si el directorio actual no tiene `_sidebar.md`, volverá al directorio padre. Si, por ejemplo, la ruta actual es `/guide/quick-start`, el `_sidebar.md` será cargado desde `/guide/_sidebar.md`.
 
-You can specify `alias` to avoid unnecessary fallback.
+Puedes especificar un `alias` para evitar un repliegue innecesario.
 
 ```html
 <script>
@@ -68,11 +66,11 @@ You can specify `alias` to avoid unnecessary fallback.
 </script>
 ```
 
-## Table of Contents
+## Tabla de contenido
 
-Once you've created `_sidebar.md`, the sidebar content is automatically generated based on the headers in the markdown files.
+Una vez que hayas creado `_sidebar.md`, el contenido del sidebar se genera automáticamente en base a los encabezados en los archivos markdown.
 
-A custom sidebar can also automatically generate a table of contents by setting a `subMaxLevel`, compare [subMaxLevel configuration](/es/configuration.md#submaxlevel).
+Un sidebar personalizado también puede generar automáticamente una tabla de contenido configurando un `subMaxLevel`, comparar [configuración subMaxLevel](/es/configuration.md#submaxlevel).
 
 ```html
 <!-- index.html -->
@@ -86,26 +84,26 @@ A custom sidebar can also automatically generate a table of contents by setting 
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 ```
 
-## Ignoring Subheaders
+## Ignorando subcabeceras
 
-When `subMaxLevel` is set, each header is automatically added to the table of contents by default. If you want to ignore a specific header, add `{docsify-ignore}` to it.
+Cuando `subMaxLevel` está establecido, cada encabezado se agrega automáticamente a la tabla de contenido de forma predeterminada. Si quiere ignorar un encabezado específico, agregue `{docsify-ignore}`.
 
 ```markdown
 # Getting Started
 
 ## Header {docsify-ignore}
 
-This header won't appear in the sidebar table of contents.
+Este encabezado (header) no aparecerá en la tabla de contenido del sidebar.
 ```
 
-To ignore all headers on a specific page, you can use `{docsify-ignore-all}` on the first header of the page.
+Para ignorar todos los encabezados en una página específica, puede usar `{docsify-ignore-all}` en el primer encabezado de la página.
 
 ```markdown
 # Getting Started {docsify-ignore-all}
 
 ## Header
 
-This header won't appear in the sidebar table of contents.
+Este encabezado (header) no aparecerá en la tabla de contenido del sidebar.
 ```
 
-Both `{docsify-ignore}` and `{docsify-ignore-all}` will not be rendered on the page when used.
+Ambos `{docsify-ignore}` y `{docsify-ignore-all}` no se mostrarán en la página cuando se usen.
