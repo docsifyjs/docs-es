@@ -1,12 +1,10 @@
-# Custom navbar
-
-!> Este archivo aún no está traducido al español, estamos traduciendo... si gustas, puedes ayudar.
+# Personalizar navbar
 
 ## HTML
 
-If you need custom navigation, you can create a HTML-based navigation bar.
+Si necesita una navegación personalizada, puede crear una barra de navegación basada en HTML.
 
-!> Note that documentation links begin with `#/`.
+!> Tenga en cuenta que los enlaces comienzan con `#/`.
 
 ```html
 <!-- index.html -->
@@ -22,7 +20,7 @@ If you need custom navigation, you can create a HTML-based navigation bar.
 
 ## Markdown
 
-Alternatively, you can create a custom markdown-based navigation file by setting `loadNavbar` to **true** and creating `_navbar.md`, compare [loadNavbar configuration](/es/configuration.md#loadnavbar).
+Alternativamente, puede crear un archivo de navegación personalizada basado en markdown estableciendo `loadNavbar` en **true** y creando `_navbar.md`, comparar [configuración del loadNavbar](/es/configuration.md#loadnavbar).
 
 ```html
 <!-- index.html -->
@@ -42,13 +40,13 @@ Alternatively, you can create a custom markdown-based navigation file by setting
 * [chinese](/zh-cn/)
 ```
 
-!> You need to create a `.nojekyll` in `./docs` to prevent GitHub Pages from ignoring files that begin with an underscore.
+!> Necesita crear un `.nojekyll` en `./docs` para evitar que GitHub Pages ignoren los archivos que comienzan con un guión bajo.
 
-`_navbar.md` is loaded from each level directory. If the current directory doesn't have `_navbar.md`, it will fall back to the parent directory. If, for example, the current path is `/guide/quick-start`, the `_navbar.md` will be loaded from `/guide/_navbar.md`.
+`_navbar.md` es cargado desde cada directorio de nivel. Si el directorio actual no tiene `_navbar.md`, volverá al directorio padre. Si, por ejemplo, la ruta actual es `/guide/quick-start`, el `_navbar.md` wserá cargado desde `/guide/_navbar.md`.
 
-## Nesting
+## Anidando
 
-You can create sub-lists by indenting items that are under a certain parent.
+Puede crear listas secundarias al sangrar (tabular) elementos que están bajo un determinado padre.
 
 ```markdown
 <!-- _navbar.md -->
@@ -68,13 +66,13 @@ You can create sub-lists by indenting items that are under a certain parent.
   * [Language highlight](/es/language-highlight.md)
 ```
 
-renders as
+produce
 
-![Nesting navbar](/es/_images/nested-navbar.png 'Nesting navbar')
+![Navbar anidado](/es/_images/nested-navbar.png 'Nesting navbar')
 
-## Combining custom navbars with the emoji plugin
+## Combinando barras de navegación personalizadas con el plugin emoji
 
-If you use the [emoji plugin](/es/plugins#emoji):
+Si usas el [plugin emoji](/es/plugins#emoji):
 
 ```html
 <!-- index.html -->
@@ -88,7 +86,7 @@ If you use the [emoji plugin](/es/plugins#emoji):
 <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
 ```
 
-you could, for example, use flag emojis in your custom navbar Markdown file:
+podrias, por ejemplo, usar los emojis de banderas en tu archivo `_navbar.md`:
 
 ```markdown
 <!-- _navbar.md -->
