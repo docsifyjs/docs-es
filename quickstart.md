@@ -1,7 +1,5 @@
 # Inicio Rápido
 
-!> Esta página aún no está traducido al español, estamos traduciendo... si gustas, puedes ayudar.
-
 Se recomienda instalar `docsify-cli` globalmente, lo que ayuda a inicializar y obtener una vista previa del sitio web localmente.
 
 ```bash
@@ -26,19 +24,19 @@ Después de que se complete `init`, puede ver la lista de archivos en el subdire
 
 Puede actualizar fácilmente la documentación en `./docs/README.md`, por supuesto puede agregar [más páginas](/es/more-pages.md).
 
-## Preview your site
+## Vista previa de su sitio
 
-Run the local server with `docsify serve`. You can preview your site in your browser on `http://localhost:3000`.
+Ejecute el servidor local con `docsify serve`. Puede obtener una vista previa de su sitio en su navegador `http://localhost:3000`.
 
 ```bash
 docsify serve docs
 ```
 
-?> For more use cases of `docsify-cli`, head over to the [docsify-cli documentation](https://github.com/QingWei-Li/docsify-cli).
+?> Para más casos de uso de `docsify-cli`, dirígete a la [documentación de docsify-cli](https://github.com/QingWei-Li/docsify-cli).
 
-## Manual initialization
+## Inicialización manual
 
-If you don't like `npm` or have trouble installing the tool, you can manually create `index.html`:
+Si no te gusta `npm` o tiene problemas para instalar la herramienta, puede crear manualmente `index.html`:
 
 ```html
 <!-- index.html -->
@@ -63,15 +61,15 @@ If you don't like `npm` or have trouble installing the tool, you can manually cr
 </html>
 ```
 
-If you installed python on your system, you can easily use it to run a static server to preview your site.
+Si instaló Python en su sistema, puede usarlo fácilmente para ejecutar un servidor estático para obtener una vista previa de su sitio.
 
 ```bash
 cd docs && python -m SimpleHTTPServer 3000
 ```
 
-## Loading dialog
+## Diálogo de carga
 
-If you want, you can show a loading dialog before docsify starts to render your documentation:
+Si desea, puede mostrar un diálogo de carga antes de que docsify comience a mostrar su documentación:
 
 ```html
   <!-- index.html -->
@@ -79,7 +77,7 @@ If you want, you can show a loading dialog before docsify starts to render your 
   <div id="app">Please wait...</div>
 ```
 
-You should set the `data-app` attribute if you changed `el`:
+Debes de configurar el atributo `data-app` si cambiaste `el`:
 
 ```html
   <!-- index.html -->
@@ -93,4 +91,4 @@ You should set the `data-app` attribute if you changed `el`:
   </script>
 ```
 
-Compare [el configuration](/es/configuration.md#el).
+Comparar la [configuración de el](/es/configuration.md#el).
