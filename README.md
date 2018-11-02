@@ -11,13 +11,13 @@ Lee la guía [Inicio Rápido](/es/quickstart.md) para más detalles.
 ## Características
 
 * No hay archivos html creados de forma estática
-* Simple y liviano (~19kB gzipped)
+* Simple y liviano (~21kB gzipped)
 * Complemento de búsqueda inteligente de texto completo
 * Múltiples diseños
 * Complemento API de utilidad
 * Soporta Emoji
 * Compatible con IE10+
-* Soporta SSR ([ejemplo](https://github.com/QingWei-Li/docsify-ssr-demo))
+* Soporta SSR ([ejemplo](https://github.com/docsifyjs/docsify-ssr-demo))
 
 ## Ejemplos
 
@@ -25,7 +25,7 @@ Mira nuestro [Showcase](/es/awesome.md) de docsify en uso.
 
 ## Donaciones
 
-Considere donar si cree que docsify le resulta útil o si mi trabajo es valioso. Estaré feliz si puedes ayudar [compra una taza de café](https://github.com/QingWei-Li/donate). :heart:
+Considere donar si cree que docsify le resulta útil o si mi trabajo es valioso. Estaré feliz si puedes ayudar [compra una taza de café](https://github.com/docsifyjs/donate). :heart:
 
 ## Comunidad
 

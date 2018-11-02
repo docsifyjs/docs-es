@@ -270,7 +270,7 @@ window.$docsify = {
     '/foo/(+*)': '/bar/$1', // supports regexp
     '/zh-cn/changelog': '/changelog',
     '/changelog':
-      'https://raw.githubusercontent.com/QingWei-Li/docsify/master/CHANGELOG',
+      'https://raw.githubusercontent.com/docsifyjs/docsify/master/CHANGELOG',
     '/.*/_sidebar.md': '/_sidebar.md' // See #301
   }
 };
@@ -382,7 +382,7 @@ window.$docsify = {
 
 - type: `Array`
 
-Sometimes we do not want docsify to handle our links. See [#203](https://github.com/QingWei-Li/docsify/issues/203)
+A veces no queremos que docsify maneje nuestros enlaces. Ver [#203](https://github.com/docsifyjs/docsify/issues/203)
 
 ```js
 window.$docsify = {
@@ -394,7 +394,7 @@ window.$docsify = {
 
 - type: `Boolean`
 
-Only coverpage is loaded when visiting the home page.
+Solo la coverpage se carga cuando visitan la página principal (el home).
 
 ```js
 window.$docsify = {
@@ -436,9 +436,9 @@ List of languages that will fallback to the default language when a page is requ
 
 Example:
 
- - try to fetch the page of `/de/overview`. If this page exists, it'll be displayed
- - then try to fetch the default page `/overview` (depending on the default language). If this page exists, it'll be displayed
- - then display 404 page.
+- try to fetch the page of `/de/overview`. If this page exists, it'll be displayed
+- then try to fetch the default page `/overview` (depending on the default language). If this page exists, it'll be displayed
+- then display 404 page.
 
 ```js
 window.$docsify = {

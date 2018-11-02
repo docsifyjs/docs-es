@@ -22,11 +22,11 @@ Poner `coverpage` a **true**, y crear un `_coverpage.md`:
 
 ![logo](/es/_media/icon.svg)
 
-# docsify <small>3.5</small>
+# docsify <small>4.8.5</small>
 
 > A magical documentation site generator.
 
-* Simple and lightweight (~19kB gzipped)
+* Simple and lightweight (~21kB gzipped)
 * No statically built html files
 * Multiple themes
 
@@ -43,9 +43,9 @@ El color de fondo (o color del background) es general aleatoriamente por defecto
 ```markdown
 <!-- _coverpage.md -->
 
-# docsify <small>3.5</small>
+# docsify <small>4.8.5</small>
 
-[GitHub](https://github.com/QingWei-Li/docsify/)
+[GitHub](https://github.com/docsify/docsify/)
 [Get Started](/es/#quick-start)
 
 <!-- background image -->

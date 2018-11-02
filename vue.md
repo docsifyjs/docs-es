@@ -44,7 +44,7 @@ You can manually initialize a Vue instance.
 ```markdown
 # Vue demo
 
-<div>hello {{ msg }}</div>
+<div id="main">hello {{ msg }}</div>
 
 <script>
   new Vue({

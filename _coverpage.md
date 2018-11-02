@@ -1,10 +1,10 @@
 ![logo](_media/icon.svg)
 
-# docsify <small>4.7.0</small>
+# docsify <small>4.8.5</small>
 
 > Un generador mágico de sitios de documentación
 
-* Simple y liviano (~19kB gzipped)
+* Simple y liviano (~21kB gzipped)
 * No genera archivos HTML estáticos
 * Multiples Diseños
 
