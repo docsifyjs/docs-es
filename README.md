@@ -17,7 +17,7 @@ Lee la guía [Inicio Rápido](/es/quickstart.md) para más detalles.
 * Complemento API de utilidad
 * Soporta Emoji
 * Compatible con IE10+
-* Soporta SSR ([ejemplo](https://github.com/docsifyjs/docsify-ssr-demo))
+* Soporta server-side rendering ([ejemplo](https://github.com/docsifyjs/docsify-ssr-demo))
 
 ## Ejemplos
 
