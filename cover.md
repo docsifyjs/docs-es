@@ -34,8 +34,6 @@ Poner `coverpage` a **true**, y crear un `_coverpage.md`:
 [Get Started](/es/#docsify)
 ```
 
-!> ¡Un sitio de documentación puede tener solo una página de portada!
-
 ## Background personalizado
 
 El color de fondo (o color del background) es general aleatoriamente por defecto. Tu puedes personalizar el color de fondo o poner una imagen de fondo:
