@@ -16,16 +16,16 @@ Lee la guía [Inicio Rápido](/es/quickstart.md) para más detalles.
 * Múltiples diseños
 * Complemento API de utilidad
 * Soporta Emoji
-* Compatible con IE10+
+* Compatible con IE11
 * Soporta server-side rendering ([ejemplo](https://github.com/docsifyjs/docsify-ssr-demo))
 
 ## Ejemplos
 
-Mira nuestro [Showcase](/es/awesome.md) de docsify en uso.
+Mira nuestro [Showcase](https://github.com/docsifyjs/awesome-docsify#showcase) de docsify en uso.
 
 ## Donaciones
 
-Considere donar si cree que docsify le resulta útil o si mi trabajo es valioso. Estaré feliz si puedes ayudar [compra una taza de café](https://github.com/docsifyjs/donate). :heart:
+Considere donar si cree que docsify le resulta útil o si mi trabajo es valioso. Estaré feliz si puedes ayudar [compra una taza de café](https://github.com/QingWei-Li/donate). :heart:
 
 ## Comunidad
 
