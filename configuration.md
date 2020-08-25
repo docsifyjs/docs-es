@@ -339,7 +339,7 @@ window.$docsify = {
 
 - type: `String|Function`
 
-Podemos mostrar la fecha de actualización del archivo a través de la variable **{docsify-updated<span>}</span>**. Y formatearlo por ``formatUpdated``.
+Podemos mostrar la fecha de actualización del archivo a través de la variable **{docsify-updated<span>}</span>**. Y formatearlo por `formatUpdated`.
 Ver https://github.com/lukeed/tinydate#patterns
 
 ```js
@@ -436,8 +436,8 @@ Lista de idiomas que se recurrirá al idioma por defecto cuando se solicite una 
 
 Ejemplo:
 
-- trata de buscar la página de "/de/overview". Si esta página existe, se mostrará
-- entonces intente buscar la página por defecto "/overview" (dependiendo del idioma por defecto). Si esta página existe, se mostrará
+- trata de buscar la página de `/de/overview`. Si esta página existe, se mostrará
+- entonces intente buscar la página por defecto `/overview` (dependiendo del idioma por defecto). Si esta página existe, se mostrará
 - y luego mostrar la página 404.
 
 ```js
