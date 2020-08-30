@@ -302,7 +302,7 @@ window.$docsify = {
 ```
 
 ```markdown
-## This is test
+## Esto es una prueba
 
 <script>
   console.log(2333)
@@ -339,8 +339,8 @@ window.$docsify = {
 
 - type: `String|Function`
 
-We can display the file update date through **{docsify-updated<span>}</span>** variable. And format it by `formatUpdated`.
-See https://github.com/lukeed/tinydate#patterns
+Podemos mostrar la fecha de actualización del archivo a través de la variable **{docsify-updated<span>}</span>**. Y formatearlo por `formatUpdated`.
+Ver https://github.com/lukeed/tinydate#patterns
 
 ```js
 window.$docsify = {
@@ -359,7 +359,7 @@ window.$docsify = {
 - type: `String`
 - default: `_blank`
 
-Target to open external links. Default `'_blank'` (new window/tab)
+El objetivo es abrir los enlaces externos. Por defecto `'_blank'` (nueva ventana/pestaña)
 
 ```js
 window.$docsify = {
@@ -406,7 +406,7 @@ window.$docsify = {
 
 - type: `Object`
 
-Set the request resource headers.
+Ponga los encabezados de los recursos de la solicitud.
 
 ```js
 window.$docsify = {
@@ -420,7 +420,7 @@ window.$docsify = {
 
 - type: `String`
 
-Request file extension.
+Solicita la extensión del archivo.
 
 ```js
 window.$docsify = {
@@ -432,13 +432,13 @@ window.$docsify = {
 
 - type: `Array<string>`
 
-List of languages that will fallback to the default language when a page is request and didn't exists for the given local.
+Lista de idiomas que se recurrirá al idioma por defecto cuando se solicite una página y que no existía para el local dado.
 
-Example:
+Ejemplo:
 
-- try to fetch the page of `/de/overview`. If this page exists, it'll be displayed
-- then try to fetch the default page `/overview` (depending on the default language). If this page exists, it'll be displayed
-- then display 404 page.
+- trata de buscar la página de `/de/overview`. Si esta página existe, se mostrará
+- entonces intente buscar la página por defecto `/overview` (dependiendo del idioma por defecto). Si esta página existe, se mostrará
+- y luego mostrar la página 404.
 
 ```js
 window.$docsify = {
@@ -450,7 +450,7 @@ window.$docsify = {
 
 - type: `Boolean` | `String` | `Object`
 
-Load the `_404.md` file:
+Carga el archivo `_404.md`:
 
 ```js
 window.$docsify = {
@@ -458,7 +458,7 @@ window.$docsify = {
 };
 ```
 
-Load the customised path of the 404 page:
+Cargar la ruta personalizada de la página 404:
 
 ```js
 window.$docsify = {
@@ -466,7 +466,7 @@ window.$docsify = {
 };
 ```
 
-Load the right 404 page according to the localisation:
+Cargar la página 404 correcta según la localización:
 
 ```js
 window.$docsify = {
@@ -477,4 +477,4 @@ window.$docsify = {
 };
 ```
 
-> Note: The options with fallbackLanguages didn't work with the `notFoundPage` options.
+> Nota: Las opciones con fallbackLanguages no funcionaron con las opciones de `notFoundPage`.
