@@ -12,7 +12,7 @@ Si necesita una navegación personalizada, puede crear una barra de navegación 
 <body>
   <nav>
     <a href="#/">EN</a>
-    <a href="#/zh-cn/">中文</a>
+    <a href="#/zh-cn/">简体中文</a>
   </nav>
   <div id="app"></div>
 </body>
