@@ -90,8 +90,8 @@ O un nombre de archivo especial
 ```js
 window.$docsify = {
   coverpage: {
-    '/': 'portada.md',
-    '/zh-cn/': 'portada.md',
+    '/': 'cover.md',
+    '/zh-cn/': 'cover.md',
   },
 };
 ```
