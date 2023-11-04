@@ -68,11 +68,11 @@ Puedes crear sublistas sangrando los elementos que se encuentran bajo un element
 
 se representa como
 
-![Barra de navegación anidada](_images/barra-navegacion-anidada.png 'Barra de navegación anidada')
+![Barra de navegación anidada](_images/nested-navbar.png 'Barra de navegación anidada')
 
 ## Combinación de barras de navegación personalizadas con el complemento de emojis
 
-Si utilizas el [complemento de emojis](plugins#emoji):
+Si utilizas el [complemento de emojis](/es/plugins#emoji):
 
 ```html
 <!-- index.html -->
