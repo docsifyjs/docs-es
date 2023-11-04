@@ -12,7 +12,7 @@ Recomendado: [jsDelivr](//cdn.jsdelivr.net), que reflejará la última versión 
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.js"></script>
 ```
 
-Como alternativa, utiliza [archivos comprimidos](/es/#archivo-comprimido).
+Como alternativa, utiliza [archivos comprimidos](/es/#compressed-file).
 
 ## Versión específica
 
