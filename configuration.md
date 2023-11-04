@@ -51,7 +51,7 @@ window.$docsify = {
 };
 ```
 
-> **Nota** Si cambias [`routerMode`](#routermode) a `'history'`, es posible que desees configurar un alias para tus archivos `_sidebar.md` y `_navbar.md`.
+> **Nota** Si cambias [`routerMode`](/es/#routermode) a `'history'`, es posible que desees configurar un alias para tus archivos `_sidebar.md` y `_navbar.md`.
 
 ## auto2top
 
@@ -198,7 +198,7 @@ window.$docsify = {
 - Tipo: `String`
 - Predeterminado: `'noopener'`
 
-El valor predeterminado es `'noopener'` (sin abridor), lo que evita que la página externa recién abierta (cuando [externalLinkTarget](#externallinktarget) es `'_blank'`) tenga la capacidad de controlar nuestra página. No se establece ningún atributo `rel` cuando no es `'_blank'`. Consulta [esta publicación](https://mathiasbynens.github.io/rel-noopener/) para obtener más información sobre por qué es posible que desees usar esta opción.
+El valor predeterminado es `'noopener'` (sin abridor), lo que evita que la página externa recién abierta (cuando [externalLinkTarget](/es/#externallinktarget) es `'_blank'`) tenga la capacidad de controlar nuestra página. No se establece ningún atributo `rel` cuando no es `'_blank'`. Consulta [esta publicación](https://mathiasbynens.github.io/rel-noopener/) para obtener más información sobre por qué es posible que desees usar esta opción.
 
 ```js
 window.$docsify = {
@@ -875,7 +875,7 @@ window.$docsify = {
 
 - Tipo: `Object`
 
-Especifica [opciones de Vue](https://vuejs.org/v2/api/#Options-Data) para su uso con contenido de Vue que no se monta explícitamente con [vueMounts](#montar-elementos-dom), [vueComponents](#componentes) o un [script de Markdown](#script-de-markdown). Los cambios en los datos globales se mantendrán y se reflejarán en cualquier lugar donde se utilicen referencias globales.
+Especifica [opciones de Vue](https://vuejs.org/v2/api/#Options-Data) para su uso con contenido de Vue que no se monta explícitamente con [vueMounts](/es/#montar-elementos-dom), [vueComponents](/es/#componentes) o un [script de Markdown](/es/#script-de-markdown). Los cambios en los datos globales se mantendrán y se reflejarán en cualquier lugar donde se utilicen referencias globales.
 
 ```js
 window.$docsify = {
