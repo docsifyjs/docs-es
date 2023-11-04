@@ -9,4 +9,4 @@
 - Múltiples temas
 
 [GitHub](https://github.com/docsifyjs/docsify/)
-[Empezar](#docsify)
+[Empezar](/es/#docsify)
