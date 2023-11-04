@@ -1,12 +1,12 @@
 ![logo](_media/icon.svg)
 
-# docsify <small>4.8.6</small>
+# docsify <small>4.13.0</small>
 
-> Un generador mágico de sitios de documentación
+> Un generador de sitios de documentación mágico.
 
-* Simple y liviano (~21kB gzipped)
-* No genera archivos HTML estáticos
-* Multiples Diseños
+- Sencillo y ligero
+- No hay archivos HTML generados estáticamente
+- Múltiples temas
 
 [GitHub](https://github.com/docsifyjs/docsify/)
-[Empezar](/es/#docsify)
+[Empezar](#docsify)
