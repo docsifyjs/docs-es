@@ -31,7 +31,7 @@ Establece `coverpage` como **true** y crea un archivo `_coverpage.md`:
 - Múltiples temas
 
 [GitHub](https://github.com/docsifyjs/docsify/)
-[Empezar](#docsify)
+[Empezar](/es/#docsify)
 ```
 
 ## Fondo personalizado
