@@ -98,11 +98,11 @@ Al incrustar cualquier tipo de archivo fuente, puedes especificar el lenguaje re
 
 [](_media/ejemplo.html ':include :type=code text')
 
-?> ¿Cómo se establece el resaltado? Puedes verlo [aquí](language-highlight.md).
+?> ¿Cómo se establece el resaltado? Puedes verlo [aquí](/es/language-highlight.md).
 
 ## Incrustar un gist
 
-Puedes incrustar un gist como contenido en formato markdown o como un bloque de código, basándote en el enfoque al comienzo de la sección [Incrustar archivos](#incrustar-archivos), pero utilizando una URL de gist sin formato como destino.
+Puedes incrustar un gist como contenido en formato markdown o como un bloque de código, basándote en el enfoque al comienzo de la sección [Incrustar archivos](/es/#embed-files), pero utilizando una URL de gist sin formato como destino.
 
 ?> **No** se necesita ningún cambio en el complemento o configuración de la aplicación para que esto funcione. De hecho, la etiqueta "Incrustar" `script` que se copia desde un gist no se cargará incluso si realizas cambios en el complemento o la configuración para permitir un script externo.
 
@@ -157,7 +157,7 @@ La `ETIQUETA` puede ser cualquier texto que desees. Actúa como un mensaje de _r
 
 ### Renderizar un bloque de código desde un gist
 
-El formato es el mismo que en la sección anterior, pero con `:type=code` agregado al texto alternativo. Al igual que en la sección [Tipo de archivo incrustado](#tipo-de-archivo-incrustado), el resaltado de sintaxis se **inferirá** a partir de la extensión (por ejemplo, `.js` o `.py`), por lo que puedes dejar el tipo establecido como `code`.
+El formato es el mismo que en la sección anterior, pero con `:type=code` agregado al texto alternativo. Al igual que en la sección [Tipo de archivo incrustado](/es/#embedded-file-type), el resaltado de sintaxis se **inferirá** a partir de la extensión (por ejemplo, `.js` o `.py`), por lo que puedes dejar el tipo establecido como `code`.
 
 Aquí está el formato:
 
