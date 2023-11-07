@@ -1,6 +1,6 @@
 # Emoji
 
-A continuación se muestra una lista completa de códigos abreviados de emoji. Docsify se puede configurar para representar emoji usando imágenes de emoji estilo GitHub o caracteres emoji nativos usando la opción de configuración [`nativeEmoji`](configuration#nativeemoji).
+A continuación se muestra una lista completa de códigos abreviados de emoji. Docsify se puede configurar para representar emoji usando imágenes de emoji estilo GitHub o caracteres emoji nativos usando la opción de configuración [`nativeEmoji`](/es/configuration#nativeemoji).
 
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));">
 
