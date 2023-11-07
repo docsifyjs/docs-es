@@ -192,7 +192,7 @@ hook.ready(() => {
 
 - Accede a los métodos y propiedades de Docsify utilizando `window.Docsify`
 - Accede a la instancia actual de Docsify utilizando el argumento `vm`
-- Los desarrolladores que prefieran utilizar un depurador pueden configurar la opción de configuración [`catchPluginErrors`](configuration#catchpluginerrors) en `false` para permitir que su depurador pause la ejecución de JavaScript en caso de error.
+- Los desarrolladores que prefieran utilizar un depurador pueden configurar la opción de configuración [`catchPluginErrors`](/es/configuration#catchpluginerrors) en `false` para permitir que su depurador pause la ejecución de JavaScript en caso de error.
 - Asegúrate de probar tu complemento en todas las plataformas admitidas y con las opciones de configuración relacionadas (si corresponde) antes de publicarlo.
 
 ## Ejemplos
