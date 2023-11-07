@@ -1,6 +1,6 @@
 # Configuración de Markdown
 
-**docsify** usa [marked](https://github.com/markedjs/marked) como _parser_ de Markdown. Puede personalizar cómo renderiza su contenido de Markdown en HTML personalizando el `renderer`:
+**docsify** utiliza [marked](https://github.com/markedjs/marked) como _parser_ de Markdown. Puedes personalizar cómo se renderiza tu contenido de Markdown en HTML personalizando el `renderer` de la siguiente manera:
 
 ```js
 window.$docsify = {
@@ -15,24 +15,24 @@ window.$docsify = {
 }
 ```
 
-?> Opciones de configuración Referencia [documentación de marked](https://github.com/markedjs/marked#options-1)
+?> Para obtener más opciones de configuración, consulta la [documentación de marked](https://github.com/markedjs/marked#options-1).
 
-Incluso usted puede personalizar completamente las reglas de _parsing_.
+Incluso puedes personalizar por completo las reglas de _parsing_:
 
 ```js
 window.$docsify = {
   markdown: function(marked, renderer) {
     // ...
 
-    return marked
+    return marked;
   }
 }
 ```
 
-## Mermaid Soportado
+## Soporte de Mermaid
 
 ```js
-// Import mermaid
+// Importar Mermaid
 //  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
 //  <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 
