@@ -1,84 +1,161 @@
 # Doc helper
 
-!> Este archivo aún no está traducido al español, estamos traduciendo... si gustas, puedes ayudar.
+docsify amplía la sintaxis de Markdown para que tus documentos sean más legibles.
 
-docsify extends Markdown syntax to make your documents more readable.
+> Nota: Para los casos de sintaxis de código especial, es mejor colocarlos dentro de comillas invertidas de código para evitar conflictos con configuraciones o emojis.
 
-## important content
+## Contenido importante
 
-Important content like:
-
-```markdown
-!> **Time** is money, my friend!
-```
-
-is rendered as:
-
-!> **Time** is money, my friend!
-
-## General tips
-
-General tips like:
+Contenido importante como:
 
 ```markdown
-?> _TODO_ unit test
+!> ¡**El tiempo** es dinero, amigo!
 ```
 
-are rendered as:
+se renderiza como:
 
-?> _TODO_ unit test
+!> ¡**El tiempo** es dinero, amigo!
 
-## Ignore to compile link
+## Consejos generales
 
-Some time we will put some other relative path to the link, you have to need to tell docsify you don't need to compile this link. For example
+Consejos generales como:
+
+```markdown
+?> _POR HACER_ prueba unitaria
+```
+
+se renderizan como:
+
+?> _POR HACER_ prueba unitaria
+
+## Ignorar la compilación del enlace
+
+A veces usaremos alguna otra ruta relativa para el enlace, y debemos decirle a docsify que no necesitamos compilar este enlace. Por ejemplo:
 
 ```md
-[link](/es//demo/)
+[enlace](/demo/)
 ```
 
-It will be compiled to `<a href="/#/demo/">link</a>` and will be loaded `/demo/README.md`. Maybe you want to jump to `/demo/index.html`.
+Se compilará como `<a href="/#/demo/">enlace</a>` y cargará `/demo/README.md`. Tal vez desees saltar a `/demo/index.html`.
 
-Now you can do that
+Ahora puedes hacerlo así:
 
 ```md
-[link](/es//demo/ ':ignore')
+[enlace](/demo/ ':ignore')
 ```
 
-You will get `<a href="/demo/">link</a>`html. Do not worry, you can still set title for link.
+Obtendrás `<a href="/demo/">enlace</a>`. No te preocupes, aún puedes establecer el título para el enlace.
 
 ```md
-[link](/es//demo/ ':ignore title')
+[enlace](/demo/ ':ignore título')
 
-<a href="/demo/" title="title">link</a>
+<a href="/demo/" título="título">enlace</a>
 ```
 
-## Set target attribute for link
+## Establecer atributo de destino para el enlace
 
 ```md
-[link](/es//demo ':target=_blank')
-[link](/es//demo2 ':target=_self')
+[enlace](/demo ':target=_blank')
+[enlace](/demo2 ':target=_self')
 ```
 
-## Disable link
+## Deshabilitar el enlace
 
 ```md
-[link](/es//demo ':disabled')
+[enlace](/demo ':disabled')
 ```
 
-## Github Task Lists
+## Listas de tareas de GitHub
 
 ```md
-* [ ] foo
-* bar
-* [x] baz
-* [] bam <~ not working
-  * [ ] bim
-  * [ ] lim
+- [ ] foo
+- bar
+- [x] baz
+- [] bam <~ no funciona
+  - [ ] bim
+  - [ ] lim
 ```
 
-* [ ] foo
-* bar
-* [x] baz
-* [] bam <~ not working
-  * [ ] bim
-  * [ ] lim
+- [ ] foo
+- bar
+- [x] baz
+- [] bam <~ no funciona
+  - [ ] bim
+  - [ ] lim
+
+## Imagen
+
+### Cambiar tamaño
+
+```md
+![logo](https://docsify.js.org/_media/icon.svg ':size=ANCHOxALTO')
+![logo](https://docsify.js.org/_media/icon.svg ':size=50x100')
+![logo](https://docsify.js.org/_media/icon.svg ':size=100')
+
+<!-- Soporta porcentaje -->
+
+![logo](https://docsify.js.org/_media/icon.svg ':size=10%')
+```
+
+![logo](https://docsify.js.org/_media/icon.svg ':size=50x100')
+![logo](https://docsify.js.org/_media/icon.svg ':size=100')
+![logo](https://docsify.js.org/_media/icon.svg ':size=10%')
+
+### Personalizar clase
+
+```md
+![logo](https://docsify.js.org/_media/icon.svg ':class=algunaClaseCss')
+```
+
+### Personalizar ID
+
+```md
+![logo](https://docsify.js.org/_media/icon.svg ':id=algunaIdCss')
+```
+
+## Personalizar ID para encabezados
+
+```md
+### ¡Hola, mundo! :id=hola-mundo
+```
+
+## Markdown en etiquetas HTML
+
+Necesitas insertar un espacio entre el contenido HTML y el contenido de Markdown. Esto es útil para renderizar contenido de Markdown en el elemento "details".
+
+```markdown
+<details>
+<summary>Autoevaluación (Haz clic para expandir)</summary>
+
+- Abc
+- Abc
+
+</details>
+```
+
+<details>
+<summary>Autoevaluación (Haz clic para expandir)</summary>
+
+- Abc
+- Abc
+
+</details>
+
+El contenido de Markdown también se puede envolver en etiquetas HTML.
+
+```markdown
+<div style='color: red'>
+
+- elemento de lista
+- elemento de lista
+- elemento de lista
+
+</div>
+```
+
+<div style='color: red'>
+
+- Abc
+- Abc
+
+</div>
