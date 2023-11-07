@@ -137,7 +137,7 @@ Recuerda que Docsify procesa el contenido de Vue en un orden específico en cada
 
 ## Opciones globales
 
-Utiliza `vueGlobalOptions` para especificar [opciones de Vue](https://vuejs.org/v2/api/#Options-Data) que se utilizarán con contenido de Vue que no esté montado explícitamente con [vueMounts](#mounts), [vueComponents](#components), o un [script de Markdown](#markdown-script). Los cambios en los datos globales se mantendrán y se reflejarán en cualquier referencia global donde se utilicen.
+Utiliza `vueGlobalOptions` para especificar [opciones de Vue](https://vuejs.org/v2/api/#Options-Data) que se utilizarán con contenido de Vue que no esté montado explícitamente con [vueMounts](/es/#mounts), [vueComponents](/es/#components), o un [script de Markdown](/es/#markdown-script). Los cambios en los datos globales se mantendrán y se reflejarán en cualquier referencia global donde se utilicen.
 
 ```js
 window.$docsify = {
