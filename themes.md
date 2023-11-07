@@ -1,34 +1,41 @@
-# Themes
+# Temas
 
-Actualmente hay tres diseños (o themes) disponibles. Copie el diseño personalizado del sitio web de [Vue](//vuejs.org) o [buble](//buble.surge.sh) o la contribución de [@liril-net](https://github.com/liril-net) al diseño del estilo negro.
+Hay varios temas disponibles, tanto oficiales como creados por la comunidad. Copia el tema personalizado de sitios web como [Vue](//vuejs.org) y [buble](//buble.surge.sh), y la contribución de [@liril-net](https://github.com/liril-net) al tema de estilo oscuro.
 
+<!-- prettier-ignore-start -->
 ```html
-<link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
-<link rel="stylesheet" href="//unpkg.com/docsify/themes/buble.css">
-<link rel="stylesheet" href="//unpkg.com/docsify/themes/dark.css">
-<link rel="stylesheet" href="//unpkg.com/docsify/themes/pure.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" />
+<link rel="stylesheet" href "//cdn.jsdelivr.net/npm/docsify/themes/buble.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/pure.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dolphin.css" />
 ```
+<!-- prettier-ignore-end -->
 
 !> Los archivos comprimidos están disponibles en `/lib/themes/`.
 
+<!-- prettier-ignore-start -->
 ```html
-<!-- compressed -->
+<!-- comprimido -->
 
-<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/buble.css">
-<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/dark.css">
-<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/pure.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
+<link relstylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/pure.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dolphin.css" />
 ```
+<!-- prettier-ignore-end -->
 
-Si tiene alguna idea o desea desarrollar un nuevo diseño, puede enviar un [pull request](https://github.com/QingWei-Li/docsify/pulls).
+Si tienes ideas o deseas desarrollar un nuevo tema, puedes enviar una [solicitud de extracción (pull request)](https://github.com/docsifyjs/docsify/pulls).
 
-#### Clic para previsualizar
+#### Haz clic para previsualizar
 
 <div class="demo-theme-preview">
   <a data-theme="vue">vue.css</a>
   <a data-theme="buble">buble.css</a>
   <a data-theme="dark">dark.css</a>
   <a data-theme="pure">pure.css</a>
+  <a data-theme="dolphin">dolphin.css</a>
 </div>
 
 <style>
@@ -43,14 +50,18 @@ Si tiene alguna idea o desea desarrollar un nuevo diseño, puede enviar un [pull
 </style>
 
 <script>
-  var preview = Docsify.dom.find('.demo-theme-preview');
-  var themes = Docsify.dom.findAll('[rel="stylesheet"]');
+  const preview = Docsify.dom.find('.demo-theme-preview');
+  const themes = Docsify.dom.findAll('[rel="stylesheet"]');
 
   preview.onclick = function (e) {
-    var title = e.target.getAttribute('data-theme')
+    const title = e.target.getAttribute('data-theme');
 
-    themes.forEach(function (theme) {
-      theme.disabled = theme.title !== title
+    themes.forEach(theme => {
+      theme.disabled = theme.title !== title;
     });
   };
 </script>
+
+## Otros temas
+
+- [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/#/) Un sistema de temas maravillosamente simple para docsify.
