@@ -1,16 +1,14 @@
-# Offline Mode
+# Modo sin conexión
 
-!> Este archivo aún no está traducido al español, estamos traduciendo... si gustas, puedes ayudar.
+[Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/) (PWA) son experiencias que combinan lo mejor de la web con lo mejor de las aplicaciones. Podemos mejorar nuestro sitio web con trabajadores de servicio para que funcione **sin conexión** o en redes de baja calidad.
 
-[Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/) (PWA) are experiences that combine the best of the web with the best of apps. We can enhance our website with service workers to work **offline** or on low-quality networks.
+También es muy fácil de usar.
 
-It is also very easy to use it.
+## Crear serviceWorker
 
-## Create serviceWorker
+Crea un archivo `sw.js` en el directorio raíz de tu proyecto y copia el siguiente código:
 
-Create a `sw.js` file in your documents root directory and copy the following code:
-
-*sw.js*
+_sw.js_
 
 ```js
 /* ===========================================================
@@ -21,97 +19,104 @@ Create a `sw.js` file in your documents root directory and copy the following co
  * Register service worker.
  * ========================================================== */
 
-const RUNTIME = 'docsify'
+const RUNTIME = 'docsify';
 const HOSTNAME_WHITELIST = [
   self.location.hostname,
   'fonts.gstatic.com',
   'fonts.googleapis.com',
-  'unpkg.com'
-]
+  'cdn.jsdelivr.net',
+];
 
-// The Util Function to hack URLs of intercepted requests
-const getFixedUrl = (req) => {
-  var now = Date.now()
-  var url = new URL(req.url)
+// La función de utilidad para modificar las URL de las solicitudes interceptadas
+const getFixedUrl = req => {
+  const now = Date.now();
+  const url = new URL(req.url);
 
-  // 1. fixed http URL
-  // Just keep syncing with location.protocol
-  // fetch(httpURL) belongs to active mixed content.
-  // And fetch(httpRequest) is not supported yet.
-  url.protocol = self.location.protocol
+  // 1. corregir URL http
+  // Simplemente mantén la sincronización con location.protocol
+  // fetch(httpURL) pertenece a contenido mixto activo.
+  // Y fetch(httpRequest) aún no es compatible.
+  url.protocol = self.location.protocol;
 
-  // 2. add query for caching-busting.
-  // Github Pages served with Cache-Control: max-age=600
-  // max-age on mutable content is error-prone, with SW life of bugs can even extend.
-  // Until cache mode of Fetch API landed, we have to workaround cache-busting with query string.
-  // Cache-Control-Bug: https://bugs.chromium.org/p/chromium/issues/detail?id=453190
+  // 2. agregar consulta para romper la caché.
+  // Las páginas de GitHub se sirven con Cache-Control: max-age=600
+  // max-age en contenido mutable es propenso a errores, con la vida de los errores del SW puede incluso extenderse.
+  // Hasta que aterrice el modo de caché de la API Fetch, tenemos que evitar problemas de caché con una cadena de consulta.
+  // Bug de Cache-Control: https://bugs.chromium.org/p/chromium/issues/detail?id=453190
   if (url.hostname === self.location.hostname) {
-    url.search += (url.search ? '&' : '?') + 'cache-bust=' + now
+    url.search += (url.search ? '&' : '?') + 'cache-bust=' + now;
   }
-  return url.href
-}
+  return url.href;
+};
 
 /**
  *  @Lifecycle Activate
- *  New one activated when old isnt being used.
+ *  Se activa uno nuevo cuando el antiguo no se está utilizando.
  *
- *  waitUntil(): activating ====> activated
+ *  waitUntil(): activar ====> activado
  */
 self.addEventListener('activate', event => {
-  event.waitUntil(self.clients.claim())
-})
+  event.waitUntil(self.clients.claim());
+});
 
 /**
- *  @Functional Fetch
- *  All network requests are being intercepted here.
+ *  @Funcional Fetch
+ *  Todas las solicitudes de red se interceptan aquí.
  *
  *  void respondWith(Promise<Response> r)
  */
 self.addEventListener('fetch', event => {
-  // Skip some of cross-origin requests, like those for Google Analytics.
+  // Omitir algunas solicitudes entre dominios, como las de Google Analytics.
   if (HOSTNAME_WHITELIST.indexOf(new URL(event.request.url).hostname) > -1) {
     // Stale-while-revalidate
-    // similar to HTTP's stale-while-revalidate: https://www.mnot.net/blog/2007/12/12/stale
-    // Upgrade from Jake's to Surma's: https://gist.github.com/surma/eb441223daaedf880801ad80006389f1
-    const cached = caches.match(event.request)
-    const fixedUrl = getFixedUrl(event.request)
-    const fetched = fetch(fixedUrl, { cache: 'no-store' })
-    const fetchedCopy = fetched.then(resp => resp.clone())
+    // similar a stale-while-revalidate de HTTP: https://www.mnot.net/blog/2007/12/12/stale
+    // Actualización de la versión de Jake a la de Surma: https://gist.github.com/surma/eb441223daaedf880801ad80006389f1
+    const cached = caches.match(event.request);
+    const fixedUrl = getFixedUrl(event.request);
+    const fetched = fetch(fixedUrl, { cache: 'no-store' });
+    const fetchedCopy = fetched.then(resp => resp.clone());
 
-    // Call respondWith() with whatever we get first.
-    // If the fetch fails (e.g disconnected), wait for the cache.
-    // If there’s nothing in cache, wait for the fetch.
-    // If neither yields a response, return offline pages.
+    // Llama a respondWith() con lo que obtengamos primero.
+    // Si la recuperación falla (por ejemplo, desconexión), espera la caché.
+    // Si no hay nada en la caché, espera la recuperación.
+    // Si ninguno de ellos proporciona una respuesta, devuelve páginas sin conexión.
     event.respondWith(
       Promise.race([fetched.catch(_ => cached), cached])
         .then(resp => resp || fetched)
-        .catch(_ => { /* eat any errors */ })
-    )
+        .catch(_ => {
+          /* come cualquier error */
+        })
+    );
 
-    // Update the cache with the version we fetched (only for ok status)
+    // Actualiza la caché con la versión que recuperamos (solo para estados ok)
     event.waitUntil(
       Promise.all([fetchedCopy, caches.open(RUNTIME)])
-        .then(([response, cache]) => response.ok && cache.put(event.request, response))
-        .catch(_ => { /* eat any errors */ })
-    )
+        .then(
+          ([response, cache]) =>
+            response.ok && cache.put(event.request, response)
+        )
+        .catch(_ => {
+          /* come cualquier error */
+        })
+    );
   }
-})
+});
 ```
 
-## Register
+## Registrar
 
-Now, register it in your `index.html`. It only works on some modern browsers, so we need to judge:
+Ahora, regístralo en tu `index.html`. Solo funciona en algunos navegadores modernos, así que debemos verificar:
 
-*index.html*
+_index.html_
 
 ```html
 <script>
   if (typeof navigator.serviceWorker !== 'undefined') {
-    navigator.serviceWorker.register('sw.js')
+    navigator.serviceWorker.register('sw.js');
   }
 </script>
 ```
 
-## Enjoy it
+## Disfrútalo
 
-Release your website and start experiencing magical offline feature. :ghost: You can turn off Wi-Fi and refresh the current site to experience it.
+Publica tu sitio web y comienza a experimentar la mágica función sin conexión. :ghost: Puedes apagar el Wi-Fi y actualizar el sitio actual para experimentarlo.

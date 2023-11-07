@@ -1,69 +1,69 @@
 # Cover
 
-Activa la característica de cover cambiando la configuración `coverpage` a **true**, comparar [configuración de coverpage](/es/configuration.md#coverpage).
+Activa la función de portada estableciendo `coverpage` como **true**. Consulta la [configuración de portada](/es/configuration.md#coverpage).
 
 ## Uso básico
 
-Poner `coverpage` a **true**, y crear un `_coverpage.md`:
+Establece `coverpage` como **true** y crea un archivo `_coverpage.md`:
 
 ```html
 <!-- index.html -->
 
 <script>
   window.$docsify = {
-    coverpage: true
-  }
+    coverpage: true,
+  };
 </script>
-<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 ```
 
 ```markdown
 <!-- _coverpage.md -->
 
-![logo](/es/_media/icon.svg)
+![logo](_media/icon.svg)
 
-# docsify <small>4.8.5</small>
+# docsify <small>3.5</small>
 
-> A magical documentation site generator.
+> Un generador mágico de sitios de documentación.
 
-* Simple and lightweight (~21kB gzipped)
-* No statically built html files
-* Multiple themes
+- Sencillo y ligero
+- Sin archivos HTML generados estáticamente
+- Múltiples temas
 
-[GitHub](https://github.com/docsify/docsify/)
-[Get Started](/es/#docsify)
+[GitHub](https://github.com/docsifyjs/docsify/)
+[Empezar](/es/#docsify)
 ```
 
-## Background personalizado
+## Fondo personalizado
 
-El color de fondo (o color del background) es general aleatoriamente por defecto. Tu puedes personalizar el color de fondo o poner una imagen de fondo:
+El color de fondo se genera aleatoriamente de forma predeterminada. Puedes personalizar el color de fondo o una imagen de fondo:
 
 ```markdown
 <!-- _coverpage.md -->
 
-# docsify <small>4.8.5</small>
+# docsify <small>3.5</small>
 
-[GitHub](https://github.com/docsify/docsify/)
-[Get Started](/es/#quick-start)
+[GitHub](https://github.com/docsifyjs/docsify/)
+[Empezar](#inicio-rápido)
 
-<!-- background image -->
+<!-- imagen de fondo -->
 
-![](/es/_media/bg.png)
+![](_media/bg.png)
 
-<!-- background color -->
+<!-- color de fondo -->
 
 ![color](#f0f0f0)
 ```
 
-## Coverpage como página de inicio
+## Portada como página de inicio
 
-Normalmente, la portada y la página de inicio aparecen al mismo tiempo. Por supuesto, también puede separar la portada por [opción onlyCover](/es/configuration.md#onlycover).
+Normalmente, la portada y la página de inicio aparecen al mismo tiempo. Por supuesto, también puedes separar la portada mediante la opción [onlyCover](/es/configuration.md#onlycover).
 
-## Portadas múltiples
+## Múltiples portadas
 
-Si el sitio de su documento está en más de un idioma, puede ser útil establecer varias cubiertas.
+Si tu sitio de documentación está en más de un idioma, puede ser útil configurar múltiples portadas.
 
-Por ejemplo, su estructura de documentos es como esta:
+Por ejemplo, la estructura de tu documentación es la siguiente
 
 ```text
 .
@@ -77,21 +77,21 @@ Por ejemplo, su estructura de documentos es como esta:
         └── _coverpage.md
 ```
 
-Tu puedes configurar así:
+Ahora puedes configurar
 
 ```js
 window.$docsify = {
-  coverpage: ['/', '/zh-cn/']
+  coverpage: ['/', '/zh-cn/'],
 };
 ```
 
-O bien con un nombre de archivo especial:
+O un nombre de archivo especial
 
 ```js
 window.$docsify = {
   coverpage: {
     '/': 'cover.md',
-    '/zh-cn/': 'cover.md'
-  }
+    '/zh-cn/': 'cover.md',
+  },
 };
 ```
